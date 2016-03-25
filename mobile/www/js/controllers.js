@@ -54,15 +54,6 @@ angular.module('starter')
 
 })
 
-.controller('PasswdCtrl', function($scope, AuthService, $state, global) {
-  $scope.userinfo = {}
-
-  $scope.init = function() {
-      $scope.userinfo = global.data;
-  };
-
-})
-
 .controller('SettingCtrl', function($scope, UpdateService, QueryService, AuthService, $ionicPopup, $state, global) {
 
   $scope.userinfo = {
