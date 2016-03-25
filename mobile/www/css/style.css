@@ -1,0 +1,12 @@
+.qrcode {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.msg-box {
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+.welcome-message {
+  font-size: 32px;
+}

@@ -1,0 +1,36 @@
+<ion-view>
+  <ion-header-bar align-title="center" class="bar-positive">
+    <h1 class="title">Account Setting</h1>
+  </ion-header-bar>
+  <ion-content class="padding">
+    <div style="padding-bottom: 30px;">
+    <div class="card">
+      <div class="item item-text-wrap" data-ng-controller="SettingCtrl" data-ng-init="init()">
+        <div class="list">
+          <label class="item item-input item-stacked-label">
+            <span class="input-label">Username</span>
+            <input type="text" disabled="true" value="{{userinfo.username}}">
+          </label>
+          <label class="item item-input item-stacked-label">
+            <span class="input-label">First Name</span>
+            <input type="text" placeholder="your firstname" ng-model="userinfo.firstname">
+          </label>
+          <label class="item item-input item-stacked-label">
+            <span class="input-label">Last Name</span>
+            <input type="text" placeholder="your lastname" ng-model="userinfo.lastname">
+          </label>
+          <label class="item item-input item-stacked-label">
+            <span class="input-label">Email</span>
+            <input type="text" placeholder="example@youremail.com" ng-model="userinfo.email">
+          </label>
+        </div>
+      </div>
+    </div>
+    <button class="button button-full button-balanced" ng-click="saveinfo()">
+      Save changes
+    </button>
+    <button class="button button-full button-assertive" ng-click="logout()">Sign out</button>
+  </div>
+  </ion-content>
+  <div ng-include="'templates/menu.html'"></div>
+</ion-view>

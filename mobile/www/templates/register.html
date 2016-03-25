@@ -1,0 +1,29 @@
+<ion-view title="Create a new account">
+  <ion-content class="padding">
+    <div class="list">
+      <label class="item item-input">
+        <span class="input-label">Username</span>
+        <input type="text" ng-model="user.username">
+      </label>
+      <label class="item item-input">
+        <span class="input-label">Password</span>
+        <input type="password" ng-model="user.passwd">
+      </label>
+      <label class="item item-input">
+        <span class="input-label">First Name</span>
+        <input type="text" ng-model="user.firstname">
+      </label>
+      <label class="item item-input">
+        <span class="input-label">Last Name</span>
+        <input type="text" ng-model="user.lastname">
+      </label>
+      <label class="item item-input">
+        <span class="input-label">Email</span>
+        <input type="text" ng-model="user.email">
+      </label>
+    </div>
+    <button class="button button-full button-positive" ng-click="signup()">
+      Sign up
+    </button>
+  </ion-content>
+</ion-view>

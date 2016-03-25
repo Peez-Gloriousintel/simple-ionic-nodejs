@@ -1,0 +1,66 @@
+<ion-view>
+  <ion-header-bar align-title="center" class="bar-positive">
+    <h1 class="title">Account Setting</h1>
+  </ion-header-bar>
+  <ion-content class="padding">
+    <div style="padding-bottom: 30px;">
+    <div class="card">
+      <div class="item item-text-wrap" data-ng-controller="SettingCtrl" data-ng-init="init()">
+        <div style="text-align: center">
+          <div class="row">
+            <div class="col col-33 col-offset-33">
+              <div class="item item-image">
+                <img src="../img/profile/default.png">
+              </div>
+            </div>
+          </div>
+          <a href="#" class="button button-positive button-clear button-full" ng-click="">
+            Update
+          </a>
+        </div>
+        <div class="list">
+          <label class="item item-input item-stacked-label">
+            <span class="input-label">Username</span>
+            <input type="text" disabled="true" value="{{userinfo.data.username}}">
+          </label>
+          <label class="item item-input item-stacked-label">
+            <span class="input-label">First Name</span>
+            <input type="text" placeholder="your firstname" value="{{userinfo.data.firstname}}">
+          </label>
+          <label class="item item-input item-stacked-label">
+            <span class="input-label">Last Name</span>
+            <input type="text" placeholder="your lastname" value="{{userinfo.data.lastname}}">
+          </label>
+          <label class="item item-input item-stacked-label">
+            <span class="input-label">Email</span>
+            <input type="text" placeholder="example@youremail.com" value={{userinfo.data.email}}>
+          </label>
+        </div>
+      </div>
+    </div>
+    <button class="button button-full button-balanced" ng-click="">
+      Save changes
+    </button>
+    <button class="button button-full button-assertive" ng-click="logout()">Sign out</button>
+    <!-- <button class="button button-full button-assertive" ng-click="destroySession()">
+      Logout
+    </button> -->
+  </div>
+  </ion-content>
+  <div class="tabs-striped tabs-color-assertive">
+    <div class="tabs">
+      <a class="tab-item" href="#">
+        <i class="icon ion-ios-list"></i>
+      </a>
+      <a class="tab-item" href="#">
+        <i class="icon ion-chatbubble-working"></i>
+      </a>
+      <a class="tab-item" href="#">
+        <i class="icon ion-person-stalker"></i>
+      </a>
+      <a class="tab-item active" href="#">
+        <i class="icon ion-gear-a"></i>
+      </a>
+    </div>
+  </div>
+</ion-view>

@@ -1,0 +1,10 @@
+{
+  "name": "pg-manage",
+  "app_id": "",
+  "proxies": [
+    {
+      "path": "/api",
+      "proxyUrl": "http://localhost:8001/api"
+    }
+  ]
+}

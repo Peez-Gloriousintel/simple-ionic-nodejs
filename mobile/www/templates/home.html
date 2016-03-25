@@ -1,0 +1,33 @@
+<ion-view>
+  <ion-header-bar align-title="center" class="bar-positive">
+    <h1 class="title">PG Manage</h1>
+  </ion-header-bar>
+  <ion-content class="padding">
+    <div style="padding-bottom: 30px;">
+    <div class="card">
+      <div class="item item-text-wrap" data-ng-controller="HomeCtrl" data-ng-init="init()">
+          <div class="row">
+            <div class="col" style="text-align: center">
+              <div class="qrcode">
+                <img src="../img/qr/{{userinfo.qrcode}}">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col msg-box" style="text-align: center">
+              <span class="welcome-message">Howdy!, {{userinfo.firstname}}</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col msg-box" style="text-align: center">
+              <span>This is a sample hybrid mobile application built on Ionic and Angular. Nodejs is running as a web service. </span>
+              <br><br>
+              <h2>Created by Peez Gloriousintel</h2>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  </ion-content>
+  <div ng-include="'templates/menu.html'"></div>
+</ion-view>
