@@ -1,3 +1,7 @@
+// @name: server.js
+// @author: pj4dev.mit@gmail.com
+// @url: https://github.com/pj4dev/simple-ionic-nodejs
+
 var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
